@@ -1,0 +1,78 @@
+//------------------------------------------------------------
+// = IMPORTS
+//------------------------------------------------------------
+// Bootstrap - Required
+$link-hover-color: none; // setting invalid value for avoid to override current color
+$link-hover-decoration: none;
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Bootstrap - Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+
+// Bootstrap - Utilities
+@import "~bootstrap/scss/utilities/clearfix";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/embed";
+
+// Base
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "icons";
+@import "buttons";
+@import "forms";
+
+//------------------------------------------------------------
+// = RESET
+//------------------------------------------------------------
+* {
+  outline: 0 !important;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font;
+  color: color(secondary);
+  background: color(primary);
+}
+
+h1, h2, h3, h4, h5, h6, figure, ul, label {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: color(secondary);
+}
+
+::selection {
+  color: color(primary);
+  background: color(secondary);
+}
+
+::-moz-selection {
+  color: color(primary);
+  background: color(secondary);
+}
+
+//------------------------------------------------------------
+// = LAYOUT
+//------------------------------------------------------------
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 4rem;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+}

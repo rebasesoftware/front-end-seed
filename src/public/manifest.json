@@ -1,0 +1,27 @@
+{
+	"name": "Front-end Seed",
+	"short_name": "Front-end Seed",
+	"start_url": "/",
+	"display": "standalone",
+	"theme_color": "#7adbd4",
+	"background_color": "#1b182d",
+	"description": "🚀 Kickass front-end boilerplate with TypeScript, Sass, Bootstrap, webpack and much more.",
+	"icons": [
+		{
+			"src": "assets/images/head/128x128.png",
+			"sizes": "128x128"
+		},
+		{
+			"src": "assets/images/head/152x152.png",
+			"sizes": "152x152"
+		},
+		{
+			"src": "assets/images/head/144x144.png",
+			"sizes": "144x144"
+		},
+		{
+			"src": "assets/images/head/192x192.png",
+			"sizes": "192x192"
+		}
+	]
+}
