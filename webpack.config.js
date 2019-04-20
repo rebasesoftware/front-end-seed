@@ -22,7 +22,7 @@ module.exports = (env, arg) => ({
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          'css-loader?url=false',
           'postcss-loader',
           {
             loader: 'sass-loader',
@@ -35,7 +35,7 @@ module.exports = (env, arg) => ({
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
     }),
