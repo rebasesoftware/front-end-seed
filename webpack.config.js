@@ -1,5 +1,5 @@
 const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
@@ -27,7 +27,9 @@ module.exports = (env, arg) => ({
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: arg.mode === 'development' ? 'expanded' : 'compressed'
+              sassOptions: {
+                outputStyle: arg.mode === 'development' ? 'expanded' : 'compressed'
+              }
             }
           }
         ]
